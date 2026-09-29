@@ -2,8 +2,8 @@
   "domain": "hunonic",
   "name": "Hunonic Smart Home",
   "version": "1.15.0",
-  "documentation": "https://github.com/home-assistant-tools/vietnam-hunonic",
-  "issue_tracker": "https://github.com/home-assistant-tools/vietnam-hunonic/issues",
+  "documentation": "https://github.com/ruanchenyuan/vietnam-hunonic",
+  "issue_tracker": "https://github.com/ruanchenyuan/vietnam-hunonic/issues",
   "requirements": [
     "aiohttp>=3.8.0",
     "paho-mqtt>=1.6.0",
