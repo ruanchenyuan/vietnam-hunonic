@@ -128,8 +128,17 @@ Nếu bạn cảm thấy hữu ích, hãy ủng hộ tôi một cốc coffee đ�
   <img src="assets/donate-qr.png" alt="Địa chỉ ủng hộ USDT TRC20" width="280">
 </p>
 
-## License
+## Giấy phép
 
 MIT License
 
-Xem file [LICENSE](LICENSE) để biết đầy đủ điều khoản sử dụng.
+---
+
+> [!CAUTION]
+> **CHỈ DÙNG CHO MỤC ĐÍCH CÁ NHÂN — KHÔNG THƯƠNG MẠI.**
+>
+> - Repo này được tạo qua reverse-engineering nhằm mục đích nghiên cứu và liên thông cá nhân (interoperability) với thiết bị **bạn sở hữu**.
+> - **KHÔNG** dùng cho mục đích thương mại dưới bất kỳ hình thức nào.
+> - **Tự kiểm tra kỹ các quy định về sở hữu trí tuệ, điều khoản dịch vụ và pháp luật hiện hành** tại nơi bạn sinh sống **trước khi** sử dụng. Bạn tự chịu hoàn toàn trách nhiệm.
+> - **KHÔNG** chia sẻ, phát tán, hay sử dụng để tấn công/chống phá/làm gián đoạn hệ thống Hunonic hoặc bất kỳ hệ thống nào.
+> - Tác giả không chịu trách nhiệm cho bất kỳ thiệt hại hay hậu quả pháp lý nào phát sinh từ việc sử dụng repo này.
