@@ -478,9 +478,10 @@ class HunonicCoordinator(DataUpdateCoordinator[dict[str, Any]]):
             self._record_channel_state(root_id, state)
             _LOGGER.debug("MQTT update root_id=%s state=%s", root_id, state)
             if self._mqtt_loop and self.data:
-                # Thông báo HA cập nhật tất cả entities (thread-safe)
+                # Thông báo HA cập nhật entities từ MQTT,
+                # nhưng KHÔNG reset timer REST của DataUpdateCoordinator.
                 self._mqtt_loop.call_soon_threadsafe(
-                    self.async_set_updated_data, self.data
+                    self.async_update_listeners
                 )
 
     def _record_channel_state(self, root_id: str, payload: dict[str, Any]) -> None:
