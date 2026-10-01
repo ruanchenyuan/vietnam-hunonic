@@ -2,9 +2,12 @@
 
 from __future__ import annotations
 
+import datetime
 import json
 import logging
 from typing import Any
+
+from homeassistant.util import dt as dt_util
 
 from homeassistant.components.sensor import SensorDeviceClass, SensorEntity, SensorStateClass
 from homeassistant.config_entries import ConfigEntry
@@ -342,6 +345,21 @@ class HunonicMeterCostSensor(_HunonicMeterBase):
     _attr_state_class = SensorStateClass.TOTAL
     _attr_native_unit_of_measurement = "VND"
     _attr_icon = "mdi:cash"
+
+    @property
+    def last_reset(self) -> datetime.datetime | None:
+        """Thời điểm bắt đầu chu kỳ tiền điện tháng hiện tại."""
+        if self._prev:
+            return None
+
+        now = dt_util.now()
+        return now.replace(
+            day=1,
+            hour=0,
+            minute=0,
+            second=0,
+            microsecond=0,
+        )
 
     def __init__(
         self, coordinator: HunonicCoordinator, device: dict[str, Any], prev: bool
